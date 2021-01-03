@@ -1,0 +1,143 @@
+
+*** Running vivado
+    with args -log SHA256.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA256.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source SHA256.tcl -notrace
+Command: synth_design -top SHA256 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1296 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 358.945 ; gain = 101.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SHA256' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256.vhd:20]
+INFO: [Synth 8-3491] module 'SHA256_control' declared at 'C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256_control.vhd:6' bound to instance 'u0' of component 'SHA256_control' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'SHA256_control' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256_control.vhd:25]
+INFO: [Synth 8-3491] module 'State_m0' declared at 'C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:6' bound to instance 'u0' of component 'State_m0' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256_control.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'State_m0' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:22]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:67]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:69]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:70]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:71]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:72]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:73]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:80]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:81]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:82]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:83]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:84]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:85]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:86]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:87]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:94]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:95]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:96]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:97]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:98]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:99]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:100]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:101]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:108]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:109]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:110]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:111]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:112]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:113]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:114]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:115]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:126]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:127]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:128]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:129]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:130]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:131]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:132]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:133]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:140]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:141]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:142]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:143]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:144]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:145]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:146]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:147]
+INFO: [Synth 8-4471] merging register 'mux_h_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:44]
+INFO: [Synth 8-4471] merging register 'loadh_reg' into 'mux_h_c_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:45]
+INFO: [Synth 8-4471] merging register 'load16reg_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:46]
+INFO: [Synth 8-4471] merging register 'mux_atoh_c_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:47]
+INFO: [Synth 8-4471] merging register 'loadatoh_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:48]
+INFO: [Synth 8-4471] merging register 'load_16_63_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:49]
+INFO: [Synth 8-4471] merging register 'loop_incre_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:50]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'load16reg_reg' [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:67]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:95]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:96]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:97]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:108]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:111]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:113]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:126]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:127]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:129]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:130]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:131]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:132]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:141]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:145]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:146]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element mux_h_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element loadh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element load16reg_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:46]
+WARNING: [Synth 8-6014] Unused sequential element mux_atoh_c_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element loadatoh_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element load_16_63_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element loop_incre_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/State_m0.vhd:51]
+An unrecoverable error has occurred, synthesis cancelled.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 417.016 ; gain = 159.109
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 54 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 29 14:12:20 2020...

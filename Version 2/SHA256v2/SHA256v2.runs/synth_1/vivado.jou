@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Dec 29 14:12:06 2020
+# Process ID: 10156
+# Current directory: C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256v2/SHA256v2.runs/synth_1
+# Command line: vivado.exe -log SHA256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA256.tcl
+# Log file: C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256v2/SHA256v2.runs/synth_1/SHA256.vds
+# Journal file: C:/Users/Lappy/Desktop/DuyTran_Capstone/Version 2/SHA256v2/SHA256v2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SHA256.tcl -notrace

@@ -3,15 +3,15 @@ use ieee.std_logic_1164.all;
 
 --------------------------------------------------
 
-entity Add6 is
-port(a, b: in std_logic_vector(0 to 5);
-	o: out std_logic_vector(0 to 5)
+entity Add32 is
+port(a, b: in std_logic_vector(0 to 31);
+	o: out std_logic_vector(0 to 31)
 );
-end Add6;  
+end Add32;  
 
 --------------------------------------------------
 
-architecture Add6_arch of Add6 is
+architecture Add32_arch of Add32 is
 
 component FullAdd
 port(a, b, cin: in std_logic;
@@ -20,7 +20,7 @@ port(a, b, cin: in std_logic;
 );
 end component;
 
-constant bl: integer := 6;
+constant bl: integer := 32;
 
 signal c_holder: std_logic_vector(0 to (bl-2));
 
@@ -35,7 +35,7 @@ begin
 		o => o(bl-1)
 	);
 
-	--6 bit add
+	--30 bit add
 	gen_add: for i in 1 to (bl-2) generate
 		ux: FullAdd
 		port map(
@@ -55,4 +55,4 @@ begin
 		cin => c_holder(bl-2),
 		o => o(0)
 	);
-end Add6_arch;
+end Add32_arch;

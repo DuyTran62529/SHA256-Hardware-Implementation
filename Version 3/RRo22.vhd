@@ -2,8 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 --------------------------------------------------
----Bitwise right rotate 22------------------------
---------------------------------------------------
 
 entity RRo22 is
 port(i: in std_logic_vector (0 to 31);

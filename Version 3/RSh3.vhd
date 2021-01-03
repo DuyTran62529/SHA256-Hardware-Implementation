@@ -2,22 +2,22 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 --------------------------------------------------
----Bitwise right rotate 22------------------------
---------------------------------------------------
 
-entity RRo22 is
+entity RSh3 is
 port(i: in std_logic_vector (0 to 31);
 	o: out std_logic_vector (0 to 31)
 );
-end RRo22;  
+end RSh3;  
 
 --------------------------------------------------
 
-architecture RRo22_arch of RRo22 is
+architecture RSh3_arch of RSh3 is
 
-constant r : integer := 22;
+constant r : integer := 3;
+
+constant mask_array : std_logic_vector (0 to (r-1)) := "000";
 
 begin
 	o(r to 31) <= i(0 to (31-r));
-	o(0 to (r-1)) <= i((31-r+1) to 31);
-end RRo22_arch;
+	o(0 to (r-1)) <= mask_array;
+end RSh3_arch;
